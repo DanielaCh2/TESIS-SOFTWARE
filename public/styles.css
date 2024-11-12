@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Background gradient animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.dashboard-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.dashboard-container h1, 
+.dashboard-container p {
+    margin: 10px 0;
+}
+
+.dashboard-iframe {
+    width: 100%;
+    height: 100vh; /* Ocupará el 100% de la altura de la ventana */
+    border: none;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.auth-box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.auth-box h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.auth-box p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.auth-box a {
+    color: #ff79c6;
+    text-decoration: none;
+}
+
+.auth-box a:hover {
+    text-decoration: underline;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    text-align: left;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 300px; /* Ajusta el ancho máximo */
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: 100%;
+    max-width: 300px; /* Ajusta el ancho máximo */
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-top: 0; /* Quita margen adicional */
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.input-group input[type="text"]::placeholder,
+.input-group input[type="password"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="password"]:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    padding: 10px 15px; /* Reducir el tamaño del botón */
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 80%; /* Ajustar el ancho del botón */
+    max-width: 300px; /* Alinear con los campos */
+    transition: background 0.3s ease;
+    margin-top: 15px; /* Espaciado superior */
+}
+
+.btn-submit:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+.btn-logout {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.btn-logout:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+.error-message {
+    color: #ff4d4d;
+    margin-top: 10px;
+}
+
+.success-message {
+    color: #4caf50; /* Verde para mensajes de éxito */
+    margin-top: 10px;
+}
+
+.switch-to-register {
+    margin-top: 20px;
+}
+
+.switch-to-register a {
+    color: #ff79c6;
+}
+
+.switch-to-register a:hover {
+    text-decoration: underline;
+}
