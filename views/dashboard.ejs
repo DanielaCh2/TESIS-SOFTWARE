@@ -6,16 +6,15 @@
     <title>Dashboard de Power BI</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
+<body class="dashboard-page">
     <div class="dashboard-container">
-        
         <!-- Incrustación del Dashboard de Power BI -->
         <iframe 
             title="PROYECTO DE TESIS" 
             src="https://app.powerbi.com/view?r=eyJrIjoiZjIwMjM0MWItOGNjZS00ZTdmLWJjZTItMzdiYTJhMWVhYTNkIiwidCI6IjkyZTc2NDI0LTRkMGItNGQ3Ny1iZmRlLTczYjBlZmU4ZDQzMCIsImMiOjR9" 
-            class="dashboard-iframe">
+            class="powerbi-iframe">
         </iframe>
-        <a href="/logout" class="btn-logout">Cerrar sesión</a>
     </div>
+    <button class="logout-button" onclick="window.location.href='/logout'">Cerrar sesión</button>
 </body>
 </html>
