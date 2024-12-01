@@ -6,7 +6,7 @@ const session = require('express-session');
 const path = require('path');
 
 // Configuración de la base de datos SQL Server
-const dbConfig = {
+/*const dbConfig = {
     user: 'sa',
     password: '1234',
     server: 'localhost', // o el servidor donde está alojado tu SQL Server
@@ -14,6 +14,17 @@ const dbConfig = {
     options: {
         encrypt: true,
         trustServerCertificate: true
+    }
+};*/
+
+const dbConfig = {
+    user: 'db_ab00fe_bdusuarios_admin',
+    password: 'abc123daniela', // Reemplaza con la contraseña real
+    server: 'SQL1001.site4now.net',
+    database: 'db_ab00fe_bdusuarios',
+    options: {
+        encrypt: true, // Requerido para conexiones en la nube
+        trustServerCertificate: false // Cambiar a false en producción
     }
 };
 
